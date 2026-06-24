@@ -30,6 +30,8 @@
     <ProjectReference Include="..\..\Modules\PayrollFeature\PayrollFeature.Infrastructure\PayrollFeature.Infrastructure.csproj" />
     <ProjectReference Include="..\..\Modules\ExpensesFeature\ExpensesFeature.GraphQL\ExpensesFeature.GraphQL.csproj" />
     <ProjectReference Include="..\..\Modules\ExpensesFeature\ExpensesFeature.Infrastructure\ExpensesFeature.Infrastructure.csproj" />
+    <ProjectReference Include="..\..\Modules\TeamFeature\TeamFeature.GraphQL\TeamFeature.GraphQL.csproj" />
+    <ProjectReference Include="..\..\Modules\TeamFeature\TeamFeature.Infrastructure\TeamFeature.Infrastructure.csproj" />
     <ProjectReference Include="..\..\Shared\HRMS.Shared.Infrastructure\HRMS.Shared.Infrastructure.csproj" />
   </ItemGroup>
 

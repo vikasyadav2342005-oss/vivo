@@ -11,6 +11,7 @@ using TodoFeature.Application.DTO;
 using DocumentsFeature.Application.DTO;
 using PayrollFeature.Application.DTO;
 using ExpensesFeature.Application.DTO;
+using TeamFeature.Application.DTO;
 
 namespace HRMS.API
 {
@@ -107,7 +108,7 @@ namespace HRMS.API
             // exhaustion and memory leaks from creating new HttpClient instances
             services.AddHttpClient();
 
-            services.AddInjectionApplication(configuration, [typeof(CreateTodoHandler).Assembly, typeof(CreateDocumentHandler).Assembly, typeof(CreatePayrollHandler).Assembly, typeof(CreateExpenseHandler).Assembly]);
+            services.AddInjectionApplication(configuration, [typeof(CreateTodoHandler).Assembly, typeof(CreateDocumentHandler).Assembly, typeof(CreatePayrollHandler).Assembly, typeof(CreateExpenseHandler).Assembly, typeof(CreateTeamMemberHandler).Assembly]);
             services.AddInjectionPostgres(configuration);
             services.AddModulesDependencyInjection(configuration);
 

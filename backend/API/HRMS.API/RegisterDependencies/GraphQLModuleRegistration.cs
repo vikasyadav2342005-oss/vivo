@@ -6,6 +6,7 @@ using LeaveFeature.GraphQL;
 using DocumentsFeature.GraphQL;
 using PayrollFeature.GraphQL;
 using ExpensesFeature.GraphQL;
+using TeamFeature.GraphQL;
 
 namespace HRMS.API.RegisterDependencies
 {
@@ -19,7 +20,8 @@ namespace HRMS.API.RegisterDependencies
                 .AddLeaveGraphQL()
                 .AddDocumentsGraphQL()
                 .AddPayrollGraphQL()
-                .AddExpensesGraphQL();
+                .AddExpensesGraphQL()
+                .AddTeamGraphQL();
         }
     }
 }
