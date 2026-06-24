@@ -1,6 +1,7 @@
 ﻿using HotChocolate.Execution.Configuration;
 using TodoFeature.GraphQL;
 using UserFeature.GraphQL;
+using AttendanceFeature.GraphQL;
 
 namespace HRMS.API.RegisterDependencies
 {
@@ -9,7 +10,8 @@ namespace HRMS.API.RegisterDependencies
         public static IRequestExecutorBuilder AddGraphQLModules(this IRequestExecutorBuilder builder)
         {
             return builder.AddTodosGraphQL()
-                .AddUserGraphQL();
+                .AddUserGraphQL()
+                .AddAttendanceGraphQL();
         }
     }
 }
