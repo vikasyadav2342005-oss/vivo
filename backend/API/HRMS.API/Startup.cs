@@ -9,6 +9,7 @@ using System.Reflection;
 using System.Text.Json.Serialization;
 using TodoFeature.Application.DTO;
 using DocumentsFeature.Application.DTO;
+using PayrollFeature.Application.DTO;
 
 namespace HRMS.API
 {
@@ -105,7 +106,7 @@ namespace HRMS.API
             // exhaustion and memory leaks from creating new HttpClient instances
             services.AddHttpClient();
 
-            services.AddInjectionApplication(configuration, [typeof(CreateTodoHandler).Assembly, typeof(CreateDocumentHandler).Assembly]);
+            services.AddInjectionApplication(configuration, [typeof(CreateTodoHandler).Assembly, typeof(CreateDocumentHandler).Assembly, typeof(CreatePayrollHandler).Assembly]);
             services.AddInjectionPostgres(configuration);
             services.AddModulesDependencyInjection(configuration);
 

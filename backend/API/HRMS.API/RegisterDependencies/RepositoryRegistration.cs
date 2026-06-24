@@ -3,6 +3,7 @@ using UserFeature.Infrastructure;
 using AttendanceFeature.Infrastructure;
 using LeaveFeature.Infrastructure;
 using DocumentsFeature.Infrastructure;
+using PayrollFeature.Infrastructure;
 
 namespace HRMS.API.RegisterDependencies
 {
@@ -15,6 +16,7 @@ namespace HRMS.API.RegisterDependencies
             services.AddAttendanceDependency(configuration);
             services.AddLeaveDependency(configuration);
             services.AddDocumentDependency(configuration);
+            services.AddPayrollDependency(configuration);
             return services;
         }
     }
